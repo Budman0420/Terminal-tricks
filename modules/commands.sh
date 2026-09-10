@@ -159,10 +159,10 @@ chmod +x "$BIN_DIR/command-center"
 cat > "$BIN_DIR/doctor" <<'EOF'
 #!/usr/bin/env bash
 
-if declare -F doctor >/dev/null 2>&1; then
+if [[ -f "$HOME/.terminal_tricks/core/bash_loader.sh" ]]; then
 
-    doctor
-
+    source "$HOME/.terminal_tricks/core/bash_loader.sh"
+    menu
 else
 
     echo
@@ -185,9 +185,10 @@ chmod +x "$BIN_DIR/doctor"
 cat > "$BIN_DIR/backupbash" <<'EOF'
 #!/usr/bin/env bash
 
-if declare -F backupbash >/dev/null 2>&1; then
+if [[ -f "$HOME/.terminal_tricks/core/bash_loader.sh" ]]; then
 
-    backupbash
+    source "$HOME/.terminal_tricks/core/bash_loader.sh"
+    menu
 
 else
 
