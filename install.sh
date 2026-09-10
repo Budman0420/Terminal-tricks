@@ -105,7 +105,7 @@ source "$MODULE_DIR/functions.sh"
 source "$MODULE_DIR/commands.sh"
 source "$MODULE_DIR/recovery.sh"
 source "$MODULE_DIR/history.sh"
-
+source "$MODULE_DIR/cleanup.sh"
 
 # ------------------------------------------------------------
 # Install shell-specific configuration
