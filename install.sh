@@ -214,5 +214,21 @@ echo "  $TERMINAL_TRICKS_DIR"
 
 echo
 echo "Next step:"
-echo "  source ~/.bashrc"
+
+case "$SHELL_TYPE" in
+
+    bash)
+        echo "  source ~/.bashrc"
+        ;;
+
+    zsh)
+        echo "  source ~/.zshrc"
+        ;;
+
+    *)
+        echo "  Restart your shell."
+        ;;
+
+esac
+
 echo
