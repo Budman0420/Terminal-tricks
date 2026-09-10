@@ -129,8 +129,9 @@ chmod +x "$BIN_DIR/my-system"
 cat > "$BIN_DIR/command-center" <<'EOF'
 #!/usr/bin/env bash
 
-if declare -F menu >/dev/null 2>&1; then
+if [[ -f "$HOME/.terminal_tricks/core/bash_loader.sh" ]]; then
 
+    source "$HOME/.terminal_tricks/core/bash_loader.sh"
     menu
 
 else
