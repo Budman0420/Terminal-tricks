@@ -162,7 +162,8 @@ cat > "$BIN_DIR/doctor" <<'EOF'
 if [[ -f "$HOME/.terminal_tricks/core/bash_loader.sh" ]]; then
 
     source "$HOME/.terminal_tricks/core/bash_loader.sh"
-    menu
+    doctor
+    
 else
 
     echo
@@ -188,7 +189,7 @@ cat > "$BIN_DIR/backupbash" <<'EOF'
 if [[ -f "$HOME/.terminal_tricks/core/bash_loader.sh" ]]; then
 
     source "$HOME/.terminal_tricks/core/bash_loader.sh"
-    menu
+    backupbash
 
 else
 
